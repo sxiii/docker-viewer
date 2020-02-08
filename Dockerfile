@@ -36,7 +36,7 @@ RUN apt-get update \
 HEALTHCHECK --interval=1m --timeout=3s \
   CMD curl -f http://localhost:3000 || exit 1
 
-USER fsviewer
+#USER fsviewer
 
 COPY run.sh /run.sh
 
